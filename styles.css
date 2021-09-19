@@ -1,0 +1,281 @@
+/* 
+Universal Definitions 
+*/
+
+@font-face {
+    font-family: lobster;
+    src: url(fonts/Lobster\ 1.4.otf);
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-section, .header, .header-links, .first-body, 
+.first-body-elements, .second-body, .second-body-elements,
+.third-body, .third-body-elements, .fourth-body, .fourth-body-elements,
+.bottom-section, .footer {
+    display: flex;
+}
+
+.header, .first-body-elements, .second-body-elements, .third-body-elements, .fourth-body-elements, .footer {
+    flex: 1;
+    margin: 0 15%;
+    flex-wrap: wrap;
+}
+
+
+/* 
+Styles applied to the header section on the page
+*/
+
+.top-section {
+    background-color: #1F2937;
+    border-bottom: 2px solid teal;
+}
+
+.header {
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    color: white;
+}
+
+header {
+    font-family: lobster, Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
+
+.header-links {
+    gap: 15px;
+}
+
+/*
+Styles applied to the first body section of the page
+*/
+
+.first-body {
+    color: white;
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    border-bottom: 2px solid teal;
+    padding: 50px 0;
+}
+
+.first-body-elements {
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.first-body-elements .left-elements{
+    display: flex;
+    padding-top: 50px;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.first-body-elements .right-elements{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sunset {
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: lightblue;
+}
+
+/*
+Sign up button styling.
+*/
+.sign-up{
+    width: 100px;
+    padding: 5px 10px;
+    background-color: #3882F6;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: lightblue;
+    font-weight: bold;
+    color: white;
+    border-style: solid;
+}
+
+
+.first-body .main-text {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.first-body .paragraph {
+    width: 500px;
+    font-size: 20px;
+}
+
+/*
+Styles applied to the second body of the page
+*/
+
+.second-body {
+    border-bottom: 2px solid teal;
+}
+
+.second-body-elements {
+    flex-direction: column;
+    padding: 50px 0;
+}
+
+/*
+Styles applied to the title above the cascade of images.
+*/
+
+.second-body .title{
+    display: flex;
+    justify-content: center;
+    font-size: 34px;
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+
+.cascade {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.cascade-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 350px;
+}
+
+.cascade-box{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    border: 5px solid lightblue;
+    border-radius: 30px;
+}
+
+.cascade-text {
+    text-align: center;
+    padding-top: 30px;
+    max-width: 200px;
+}
+
+/*
+Styles applied to the third body section of the page.
+*/
+
+.third-body {
+    background-color: #E5E7EB;
+    border-bottom: 2px solid teal;
+}
+
+.quote-section {
+    padding: 150px 100px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 10px;
+}
+
+.quote {
+    font-style: italic;
+    font-size: 32px;
+    color: #1F2937;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-author {
+    font-size: 20px;
+    text-align: right;
+}
+
+
+/*
+Styles applied to the fourth body section of the page.
+*/
+
+.fourth-body {
+    border-bottom: 2px solid teal;
+}
+
+.fourth-body-elements {
+    padding: 120px 20px;
+}
+
+/*
+The code below changes the parameters for the elements inside the blue prompt box.
+*/
+
+
+.prompt {
+    color: white;
+    display: flex;
+    flex: 1;
+    background-color: #3882F6;
+    border-radius: 15px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+    border: 2px solid lightblue;
+}
+
+.prompt .title {
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.prompt .text {
+    font-size: 16px;
+}
+
+.prompt button {
+    padding: 5px 25px;
+    color: white;
+    background-color: #3882F6;
+    border-style: solid;
+    border-radius: 8px;
+    border-width: 2px;
+    font-weight: bolder;
+}
+
+/*
+Styles applied to the footer of the page.
+*/
+
+.bottom-section {
+    color: white;
+    border-bottom: 2px solid teal;
+    background-color: #1F2937;
+    padding: 20px 0;
+}
+
+.footer {
+    justify-content: center;
+}
+
+.bottom-section a {
+    color:lightblue;
+}
